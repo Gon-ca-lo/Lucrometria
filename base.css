@@ -277,7 +277,10 @@ footer p span {
 /* CONTACT */
 .contact {
   padding: 5rem 2rem;
-  background: linear-gradient(225deg, #00c853, #0052cc); /* gradient bg */
+ background: 
+  linear-gradient(to top, #111111 0%, transparent 40%),   /* fade into #111111 at top */
+  linear-gradient(to bottom, #0D0D0D 0%, transparent 40%), /* fade into #0D0D0D at bottom */
+  linear-gradient(225deg, #00c853, #0052cc); /* main diagonal gradient */
   text-align: center;
 }
 .contact-container {
@@ -326,4 +329,5 @@ footer p span {
   color: #fff;
   cursor: pointer;
   box-shadow: 0 0 15px rgba(0, 200, 83, 0.8);
+
 }
