@@ -68,17 +68,17 @@
     <div class="contact-container">
         <h2>Entre em Contacto</h2>
         <form id="contactForm" action="https://formsubmit.co/goncalonevesleal@gmail.com" method="POST">
-        <input type="text" id="name" placeholder="Nome*" required>
-        <input type="text" id="company" placeholder="Empresa*" required>
-        <input type="tel" id="phone" placeholder="Telefone*" required>
-        <input type="email" id="email" placeholder="Email*" required>
-        <select id="area" required>
+        <input type="text" id="name" name="Nome: " placeholder="Nome*" required>
+        <input type="text" id="company" name="Empresa: " placeholder="Empresa*" required>
+        <input type="tel" id="phone" name="Telefone: " placeholder="Telefone*" required>
+        <input type="email" id="email" name="Email: " placeholder="Email*" required>
+        <select id="area" name="Área: " required>
             <option value="">Área de Interesse*</option>
             <option value="telecoms">Telecomunicações</option>
             <option value="energy">Energia</option>
             <option value="construction">Construção</option>
         </select>
-        <textarea id="notes" placeholder="Notas (opcional)"></textarea>
+        <textarea id="notes" name="Notas: " placeholder="Notas (opcional)"></textarea>
         <button type="submit" id="submitBtn" disabled>Enviar</button>
         </form>
     </div>
@@ -96,3 +96,4 @@
 </body>
 
 </html>
+
