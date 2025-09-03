@@ -46,6 +46,14 @@ ul { list-style: none; }
   text-shadow: 0 0 10px rgba(0, 200, 83, 0.7);
 }
 
+/* Hamburger Menu */
+.hamburger {
+  display: none; /* hidden on desktop by default */
+  cursor: pointer;
+  color: #00c853;
+  font-size: 1.8rem;
+}
+
 .header nav ul {
   display: flex; gap: 1.5rem;
 }
@@ -277,7 +285,7 @@ footer p span {
 /* CONTACT */
 .contact {
   padding: 5rem 2rem;
- background: 
+  background: 
   linear-gradient(to top, #111111 0%, transparent 40%),   /* fade into #111111 at top */
   linear-gradient(to bottom, #0D0D0D 0%, transparent 40%), /* fade into #0D0D0D at bottom */
   linear-gradient(225deg, #00c853, #0052cc); /* main diagonal gradient */
@@ -329,5 +337,96 @@ footer p span {
   color: #fff;
   cursor: pointer;
   box-shadow: 0 0 15px rgba(0, 200, 83, 0.8);
+}
 
+
+/* Responsive tweaks */
+@media (max-width: 1024px) {
+  .hero {
+    height: auto;
+    padding: 4rem 1.5rem;
+    background-size: cover; /* fallback for tablets */
+    background-position: center;
+  }
+  .hero h1 { font-size: 2.2rem; }
+  .hero p { font-size: 1.1rem; }
+}
+
+@media (max-width: 768px) {
+  /* Show hamburger on tablets/mobile */
+  .hamburger {
+    display: block;
+  }
+  .header nav ul {
+    display: none; /* hide full nav */
+    flex-direction: column;
+    background: #0d0d0d;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+    border-left: 1px solid rgba(0, 200, 83, 0.3);
+    z-index: 99;
+  }
+  .header nav ul.active {
+    display: flex;
+  }
+
+  /* NAVIGATION */
+  .header nav ul {
+    display: none; /* hide full nav */
+    flex-direction: column;
+    background: #0d0d0d;
+    position: absolute; top: 100%; right: 0;
+    width: 200px; padding: 1rem;
+    border-left: 1px solid rgba(0, 200, 83, 0.3);
+  }
+  .header nav ul.active { display: flex; }
+
+  .header .hamburger {
+    display: block;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #00c853;
+  }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                url(img/energy.png);
+    background-size: cover;
+  }
+
+  /* CARDS */
+  .cards {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .card {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  /* HEADINGS */
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.6rem; }
+  h3 { font-size: 1.3rem; }
+  p { font-size: 1rem; }
+}
+
+@media (max-width: 480px) {
+  .hero { padding: 3rem 1rem; }
+  .hero h1 { font-size: 1.6rem; }
+  .hero p { font-size: 0.95rem; }
+
+  .cta-btn {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .contact-icon {
+    width: 60px; height: 60px;
+    font-size: 1.3rem;
+  }
 }
