@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucrometria - Telecomunicações, Energia & Construção</title>
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="base.js" defer></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">⚡ Lucrometria</div>
+    <nav>
+      <ul>
+        <li><a href="#hero">Início</a></li>
+        <li><a href="#industries">O Que Fazemos</a></li>
+        <li><a href="#why">Porquê Nós</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <h1>Ligamos Portugal ao Futuro</h1>
+    <p>Telecomunicações, Energia e Construção moderna — tudo num só parceiro.</p>
+    <a href="#industries" class="cta-btn">Descubra Mais</a>
+  </section>
+
+  <!-- Industries -->
+  <section id="industries" class="industries">
+    <h2>Áreas de Atuação</h2>
+    <div class="cards">
+      <div class="card telecoms">
+        <h3>Telecomunicações</h3>
+        <p>Fibra ótica aérea para redes rápidas e fiáveis em todo o país.</p>
+      </div>
+      <div class="card energy">
+        <h3>Energia</h3>
+        <p>Infraestruturas subterrâneas para parques solares sustentáveis.</p>
+      </div>
+      <div class="card construction">
+        <h3>Construção</h3>
+        <p>Casas privadas com qualidade, confiança e inovação.</p>
+      </div>
+    </div>
+    <a href="#why" class="scroll-down">⭣ Continuar</a>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section id="why" class="why">
+    <div class="why-container">
+        <h2>Porquê Escolher a Nossa Empresa?</h2>
+        <ul class="reasons">
+        <li>✔ Experiência comprovada em grandes projetos</li>
+        <li>✔ Equipa especializada em várias áreas</li>
+        <li>✔ Foco em soluções sustentáveis</li>
+        <li>✔ Apoio próximo e transparente</li>
+        </ul>
+        <a href="#contact" class="cta-btn">Peça um Orçamento</a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="contact-container">
+        <h2>Entre em Contacto</h2>
+        <form id="contactForm">
+        <input type="text" id="name" placeholder="Nome*" required>
+        <input type="text" id="company" placeholder="Empresa*" required>
+        <input type="tel" id="phone" placeholder="Telefone*" required>
+        <input type="email" id="email" placeholder="Email*" required>
+        <select id="area" required>
+            <option value="">Área de Interesse*</option>
+            <option value="telecoms">Telecomunicações</option>
+            <option value="energy">Energia</option>
+            <option value="construction">Construção</option>
+        </select>
+        <textarea id="notes" placeholder="Notas (opcional)"></textarea>
+        <button type="submit" id="submitBtn" disabled>Enviar</button>
+        </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Lucrometria - Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Floating Contact -->
+  <a href="tel:+351 912 345 678" class="contact-icon">
+    <i class="fas fa-phone"></i>
+  </a>
+</body>
+</html>
