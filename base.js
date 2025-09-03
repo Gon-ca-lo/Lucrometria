@@ -1,4 +1,13 @@
-// Form validation
+// TOGGLE NAV MENU ON MOBILE
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".header nav ul");
+
+hamburger.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
+});
+
+
+// FORM VALIDATION
 const form = document.getElementById("contactForm");
 const submitBtn = document.getElementById("submitBtn");
 
